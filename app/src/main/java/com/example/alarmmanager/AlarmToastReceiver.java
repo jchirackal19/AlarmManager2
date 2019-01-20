@@ -11,4 +11,6 @@ public class AlarmToastReceiver extends BroadcastReceiver {
         Toast.makeText(context, "This is my Alarm", Toast.LENGTH_LONG).show();
 
     }
+    
 }
+

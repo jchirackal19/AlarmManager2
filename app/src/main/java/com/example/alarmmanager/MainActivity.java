@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(!isRepeat){
-            manager.set(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime()+5000,pendingIntent);
+            manager.set(AlarmManager.RTC_WAKEUP, SystemClock.elapsedRealtime() + 1000,pendingIntent);
         }
         else{
-            manager.setRepeating(AlarmManager.RTC_WAKEUP,SystemClock.elapsedRealtime()+5000,5000,pendingIntent);
+            manager.setRepeating(AlarmManager.RTC_WAKEUP,SystemClock.elapsedRealtime() + 1000,3000,pendingIntent);
         }
     }
 }
